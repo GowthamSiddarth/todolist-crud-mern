@@ -1,11 +1,13 @@
-import React from "react";
+import React, { Component } from "react";
 
-const CreateTodo = () => {
-    return (
-        <div>
-            <p>Welcome to Create Todo Component</p>
-        </div>
-    );
-};
+class CreateTodo extends Component {
+    render() {
+        return (
+            <div>
+                <p>Welcome to Create Todo Component</p>
+            </div>
+        );
+    }
+}
 
 export default CreateTodo;
