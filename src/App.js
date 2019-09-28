@@ -13,7 +13,7 @@ function App() {
     <Router>
       <div className="container">
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
-          <Link to="/" className="navbar-brand">TodoList App</Link>
+          <Link to="/" className="navbar-brand">Todo List App</Link>
           <div className="collapse navbar-collapse">
             <ul className="navbar-nav mr-auto">
               <li className="navbar-item">
@@ -25,6 +25,7 @@ function App() {
             </ul>
           </div>
         </nav>
+        <br />
         <Route path="/" exact component={TodoList} />
         <Route path="/edit/:id" exact component={EditTodo} />
         <Route path="/create" exact component={CreateTodo} />
