@@ -26,7 +26,6 @@ router.route('/:id').get(function (req, res) {
 
 router.route('/create').post(function (req, res) {
     let todo = new Todo(req.body);
-    console.log(todo);
     todo.save()
         .then(todo => {
             res.status(200).json({ success: true, message: 'todo added successfully' });
