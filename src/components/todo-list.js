@@ -5,11 +5,11 @@ import axios from 'axios';
 function Todo(props) {
     return (
         <tr>
-            <td>{props.todo.description}</td>
-            <td>{props.todo.responsible}</td>
-            <td>{props.todo.priority}</td>
+            <td className={props.todo.completed ? 'completed' : ''}>{props.todo.description}</td>
+            <td className={props.todo.completed ? 'completed' : ''}>{props.todo.responsible}</td>
+            <td className={props.todo.completed ? 'completed' : ''}>{props.todo.priority}</td>
             <td>
-                <Link to={"update/" + props.todo._id}>Update</Link>
+                <Link to={"edit/" + props.todo._id}>Update</Link>
             </td>
         </tr>
     );
