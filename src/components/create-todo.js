@@ -1,7 +1,8 @@
 import React, { Component } from "react";
+import axios from "axios";
 
 class CreateTodo extends Component {
-    
+
     constructor(props) {
         super(props);
 
@@ -46,7 +47,17 @@ class CreateTodo extends Component {
     onSubmit(e) {
         e.preventDefault();
 
-        this.state({
+        const newTodo = {
+            description: this.state.description,
+            responsible: this.state.responsible,
+            priority: this.state.priority,
+            completed: this.state.completed
+        };
+
+        axios.post('http://localhost:4000/api/todo/create', newTodo)
+            .then(res => console.log(res));
+
+        this.setState({
             description: '',
             responsible: '',
             priority: '',
