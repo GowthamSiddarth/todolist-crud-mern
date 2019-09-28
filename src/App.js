@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import TodoList from './components/todo-list';
+import EditTodo from './components/edit-todo';
+import CreateTodo from './components/create-todo';
+
 
 function App() {
   return (
