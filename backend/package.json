@@ -1,0 +1,26 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Node server with Express framework for Todo List App",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \\\"No test\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GowthamSiddarth/todolist-crud-mern.git"
+  },
+  "keywords": [
+    "Node",
+    "Express",
+    "Server",
+    "TodoList",
+    "REST"
+  ],
+  "author": "Gowtham Behara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GowthamSiddarth/todolist-crud-mern/issues"
+  },
+  "homepage": "https://github.com/GowthamSiddarth/todolist-crud-mern#readme"
+}
